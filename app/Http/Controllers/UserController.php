@@ -11,7 +11,7 @@ class UserController extends Controller
         return "From Controller";
     }
 
-    function loadeView() {
-        return view('users');
+    function loadeView($user_name) {
+        return view('users', ['user_name'=>$user_name]);
     }
 }
