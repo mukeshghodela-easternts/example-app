@@ -20,4 +20,11 @@ Route::get('/custom-file', function () {
     return view('hello');
 });
 
-Route::get('user/{id}', [UserController::class, 'show']);
+// Route::get('/user', function () {
+//     return view('users');
+// });
+
+Route::get('user', [UserController::class, 'show']);
+Route::get('/user/{name}', function($name) {
+    return view('users', ["user_name"=>$name]);
+});
