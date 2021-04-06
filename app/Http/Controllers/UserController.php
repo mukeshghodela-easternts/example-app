@@ -10,4 +10,8 @@ class UserController extends Controller
     function show() {
         return "From Controller";
     }
+
+    function loadeView() {
+        return view('users');
+    }
 }

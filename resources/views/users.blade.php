@@ -22,7 +22,7 @@
 </head>
 <body class="antialiased">
 <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-    <h1>Hell user {{$user_name}} </h1>
+    <h1>Calling user view from controller </h1>
 </div>
 </body>
 </html>

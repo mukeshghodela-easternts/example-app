@@ -25,6 +25,7 @@ Route::get('/custom-file', function () {
 // });
 
 Route::get('user', [UserController::class, 'show']);
+Route::get('load-view', [UserController::class, 'loadeView']);
 Route::get('/user/{name}', function($name) {
     return view('users', ["user_name"=>$name]);
 });
