@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\PostsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -33,3 +34,5 @@ Route::get('/user/{name}', function($name) {
 });
 
 Route::view("about", "about");
+
+Route::get('posts', [PostsController::class, 'loadView']);
