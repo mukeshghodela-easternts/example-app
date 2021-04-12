@@ -1,6 +1,7 @@
 <h1> Posts </h1>
 <h2>Total Posts : {{ count($posts) }}</h2>
 
+
 @if (count($posts) > 5)
     <h2>5+ Posts</h2>
 
@@ -11,3 +12,9 @@
     <h2>{{ count($posts) }} Posts</h2>
 
 @endif
+
+<h1>Post Listing</h1>
+
+@foreach ($posts as $post)
+    <h3>{{ $post }}</h3>
+@endforeach
