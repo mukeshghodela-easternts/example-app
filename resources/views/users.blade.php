@@ -21,7 +21,7 @@
     </style>
 </head>
 <body class="antialiased">
-<x-header/>
+<x-header componentName="User" />
 <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
     <h1>Calling user view from controller </h1>
     <br/>
