@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PostsController;
+use App\Http\Controllers\CustomersController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -35,4 +36,10 @@ Route::get('/user/{name}', function($name) {
 
 Route::view("about", "about");
 
+// Posts controller page route
 Route::get('posts', [PostsController::class, 'loadView']);
+
+// Customers controller page route
+Route::post('customers', [CustomersController::class, 'getData']);
+// Customers controller page route
+Route::get('customers', [CustomersController::class, 'loadCustomers']);
